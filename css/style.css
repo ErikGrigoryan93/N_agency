@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.main_header {
+  width: 100%;
+  box-shadow: -2px 4px 3px #cccccc;
+  position: fixed;
+  top: 0;
+}
+.main_header .header_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+.main_header .header_content img {
+  padding: 15px;
+}
+.main_header .header_content li {
+  display: inline;
+}
+.main_header .header_content li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+.main_header .header_content li a:hover {
+  color: red;
+}
