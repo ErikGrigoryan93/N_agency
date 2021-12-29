@@ -52,7 +52,7 @@ hr {
   color: black;
 }
 .main_header .header_content li a:hover {
-  color: red;
+  color: #ed5f5e;
   transition: 1s;
 }
 .main_container .home {
@@ -134,6 +134,10 @@ hr {
   line-height: 1.5;
   color: gray;
 }
+.main_container .portfolio {
+  background-color: #f8f8f8;
+  padding: 100px 0;
+}
 .main_container .portfolio h2 {
   text-align: center;
 }
@@ -151,10 +155,10 @@ hr {
   text-decoration: none;
   padding: 10px 15px;
   margin: 5px;
-  background-color: gray;
+  background-color: white;
 }
 .main_container .portfolio ul li a:hover {
-  color: red;
+  color: #ed5f5e;
   transition: 1s;
 }
 .main_container .portfolio .portfolio_card_list {
@@ -164,6 +168,35 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.main_container .portfolio .portfolio_card_list div img {
+.main_container .portfolio .portfolio_card_list > div {
+  position: relative;
+  overflow: hidden;
+}
+.main_container .portfolio .portfolio_card_list > div:hover .child {
+  transform: translate(0, 0);
+}
+.main_container .portfolio .portfolio_card_list > div img {
   width: 100%;
+}
+.main_container .portfolio .portfolio_card_list > div .child {
+  width: 100%;
+  height: 100%;
+  background-color: #ed5e5ee1;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translate(0, -100%);
+  transition-duration: 0.3s;
+}
+.main_container .portfolio .portfolio_card_list > div .child div {
+  text-align: center;
+}
+.main_container .portfolio .portfolio_card_list > div .child div h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }

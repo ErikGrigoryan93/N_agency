@@ -57,7 +57,7 @@ hr {
                     padding:20px;
                     color: black;
                     &:hover {
-                        color: red;
+                        color: #ed5f5e;
                         transition: 1s;
                     }
                 }
@@ -165,6 +165,8 @@ hr {
     }
 
     .portfolio {
+        background-color: #f8f8f8;
+        padding: 100px 0;
         h2 {
             text-align: center;
         }
@@ -182,9 +184,9 @@ hr {
                     text-decoration: none;
                     padding: 10px 15px;
                     margin: 5px;
-                    background-color: gray;
+                    background-color: white;
                     &:hover {
-                        color: red;
+                        color: #ed5f5e;
                         transition: 1s;
                     }
                 }
@@ -198,9 +200,41 @@ hr {
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
 
-            div {
+            > div {
+                position: relative;
+                overflow: hidden;
+                &:hover {
+                    .child {
+                        transform: translate(0 , 0);
+                    }
+                }
                 img {
                     width: 100%;
+                }
+
+                .child {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #ed5e5ee1;
+                    background-position: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    color: white; 
+                    transform: translate(0,-100%);
+                    transition-duration: 0.3s;
+                    
+                    div {
+                        text-align: center;
+                        h3 {
+                            text-transform: uppercase;
+                            margin-bottom: 20px;
+                        }
+                    }
+                                          
                 }
             }
         }
