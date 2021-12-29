@@ -83,6 +83,11 @@ hr {
             color: white;
             line-height: 1.5;
 
+            h2 {
+                letter-spacing: 3px;
+                font-size: 26px;
+            }
+
             button {
                 padding: 10px 15px;
                 border: none;
@@ -185,6 +190,9 @@ hr {
                     padding: 10px 15px;
                     margin: 5px;
                     background-color: white;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    letter-spacing: 2px;
                     &:hover {
                         color: #ed5f5e;
                         transition: 1s;
@@ -238,6 +246,27 @@ hr {
                 }
             }
         }
+    }
+
+    .help {
+        max-width: 1200px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        p {
+            color: gray;
+        }
+
     }
 
 

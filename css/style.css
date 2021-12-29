@@ -70,6 +70,10 @@ hr {
   color: white;
   line-height: 1.5;
 }
+.main_container .home div h2 {
+  letter-spacing: 3px;
+  font-size: 26px;
+}
 .main_container .home div button {
   padding: 10px 15px;
   border: none;
@@ -156,6 +160,9 @@ hr {
   padding: 10px 15px;
   margin: 5px;
   background-color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 .main_container .portfolio ul li a:hover {
   color: #ed5f5e;
@@ -199,4 +206,20 @@ hr {
 .main_container .portfolio .portfolio_card_list > div .child div h3 {
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+.main_container .help {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.main_container .help h2 {
+  font-size: 24px;
+}
+.main_container .help hr {
+  margin: 20px 0;
+}
+.main_container .help p {
+  color: gray;
 }
