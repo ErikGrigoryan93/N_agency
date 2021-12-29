@@ -245,3 +245,49 @@ hr {
   transform: translate(0, 0);
   transition-duration: 0.2s;
 }
+.main_container .video {
+  width: 100%;
+  height: 100vh;
+}
+.main_container .team {
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.main_container .team h2 {
+  text-align: center;
+}
+.main_container .team hr {
+  text-align: center;
+  margin: 20px auto;
+}
+.main_container .team > p {
+  margin: auto;
+  width: 800px;
+  color: gray;
+  text-align: center;
+  line-height: 2;
+}
+.main_container .team .team_card_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: 50px;
+}
+.main_container .team .team_card_list > div {
+  background-color: #f8f8f8;
+}
+.main_container .team .team_card_list > div img {
+  width: 100%;
+}
+.main_container .team .team_card_list > div h4 {
+  line-height: 24px;
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+}
+.main_container .team .team_card_list > div p {
+  font-size: 12px;
+  color: #c4c4c4;
+  text-align: center;
+  margin-bottom: 20px;
+}
