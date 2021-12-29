@@ -16,13 +16,26 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 button {
     text-transform: uppercase;
 }
 
+div {
+    display: block;
+}
+
+hr {
+    width: 30px;
+    color: black;
+}
+
 .main_header {
         width: 100%; 
-        box-shadow: -2px 4px 3px rgb(204, 204, 204);
         background-color: white;
         position: fixed;
         top: 0;
@@ -41,10 +54,11 @@ button {
                 a {
                     display: inline-block;
                     text-decoration: none;
-                    padding: 20px;
+                    padding:20px;
                     color: black;
                     &:hover {
                         color: red;
+                        transition: 1s;
                     }
                 }
             }
@@ -98,7 +112,99 @@ button {
             }
         }
         
-    }   
+    } 
+    
+    .service {
+        max-width: 1200px;
+        margin: 100px auto;
+        h2 {
+            text-align: center;
+        }
+
+        hr {
+            text-align: center;
+            margin:20px auto;
+        }
+
+        > p {
+            margin: auto;
+            width: 800px;
+            color: gray;
+            text-align: center;
+            line-height: 2;
+        }
+
+        .service_card_list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin: 50px;
+
+            > div {
+                background-color: #f8f8f8;
+                padding: 20px;
+                i {
+                    color: white;
+                    background-color: #ed5f5e;
+                    padding: 15px;
+                    font-size: 20px;
+                    margin: 30px 0;
+                }
+                
+                h3 {
+                    line-height: 36px;
+                }
+
+                p {
+                    font-size: 1kpx;
+                    line-height: 1.5;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        h2 {
+            text-align: center;
+        }
+
+        hr {
+            margin: 20px auto;
+        }
+
+        ul{
+            text-align: center;
+            li {
+                display: inline;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    margin: 5px;
+                    background-color: gray;
+                    &:hover {
+                        color: red;
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+
+        .portfolio_card_list {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
 
 }
