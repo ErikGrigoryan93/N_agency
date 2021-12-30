@@ -61,6 +61,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -290,4 +291,34 @@ hr {
   color: #c4c4c4;
   text-align: center;
   margin-bottom: 20px;
+}
+.main_container .skills {
+  background-color: #f8f8f8;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container .skills > div {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.main_container .skills > div > div > hr {
+  margin: 20px 0;
+}
+.main_container .skills > div > div .table > div.title {
+  display: flex;
+  justify-content: space-between;
+}
+.main_container .skills > div > div .table > div.loading {
+  width: 100%;
+  background-color: #ececec;
+}
+.main_container .skills > div > div .table > div.loading hr {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 1px;
+  background-color: #ed5e5ee1;
 }

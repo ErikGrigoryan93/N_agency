@@ -74,6 +74,7 @@ hr {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-attachment: fixed;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -343,6 +344,48 @@ hr {
                     color: rgb(196, 196, 196);
                     text-align: center;
                     margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .skills {
+        background-color: #f8f8f8;      
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > div {
+            width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            > div {
+                > hr {
+                    margin: 20px 0;
+                }
+
+                .table {
+                    > div.title {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    > div.loading {
+                        width: 100%;
+                        background-color: rgb(236, 236, 236);
+                        hr {
+                            margin-top: 10px;
+                            margin-bottom: 20px;
+                            padding: 1px;
+                            background-color: #ed5e5ee1;
+                        }
+
+                    }
+
+
+
                 }
             }
         }
