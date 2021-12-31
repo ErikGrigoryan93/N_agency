@@ -377,6 +377,7 @@ hr {
   justify-content: space-between;
   padding: 20px;
   background-color: white;
+  border-top: 1px solid #e6e6e6;
 }
 .main_container .icons {
   max-width: 1200px;
@@ -443,4 +444,24 @@ hr {
   background-color: #ed5f5e;
   color: white;
   transition-duration: 1s;
+}
+.main_container .blog {
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+}
+.main_container .blog hr {
+  margin: 20px auto;
+}
+.main_container .blog p {
+  margin-bottom: 50px;
+}
+.main_container .blog div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  background-color: #f8f8f8;
+}
+.main_container .blog div img {
+  width: 100%;
 }
