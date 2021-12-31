@@ -337,3 +337,26 @@ hr {
   padding: 20px;
   background-color: white;
 }
+.main_container .icons {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main_container .icons div {
+  display: inline-block;
+}
+.main_container .icons .logo {
+  background-color: #ed5f5e;
+}
+.main_container .icons .logo i {
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+}
+.main_container .icons .number {
+  font-size: 36px;
+  padding: 0 20px;
+  color: gray;
+  font-weight: bolder;
+}
