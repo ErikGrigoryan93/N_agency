@@ -319,6 +319,21 @@ hr {
 .main_container .skills > div > div .table > div.loading hr {
   margin-top: 10px;
   margin-bottom: 20px;
-  padding: 1px;
+  padding: 2px;
+  border: none;
   background-color: #ed5e5ee1;
+}
+.main_container .skills > div .choose .thead {
+  color: white;
+  background-color: #ed5e5ee1;
+}
+.main_container .skills > div .choose > p {
+  padding: 20px 30px;
+  background-color: white;
+}
+.main_container .skills > div .choose div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
 }
