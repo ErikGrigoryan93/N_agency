@@ -277,14 +277,55 @@ hr {
 .main_container .team .team_card_list > div {
   background-color: #f8f8f8;
 }
-.main_container .team .team_card_list > div img {
+.main_container .team .team_card_list > div:hover .parent .child {
+  transform: translate(0, 0);
+}
+.main_container .team .team_card_list > div:hover h4 {
+  color: #ed5f5e;
+}
+.main_container .team .team_card_list > div .parent {
+  position: relative;
+  overflow: hidden;
+}
+.main_container .team .team_card_list > div .parent img {
   width: 100%;
+}
+.main_container .team .team_card_list > div .parent .child {
+  background-color: #ed5e5ee1;
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0;
+  left: 0;
+  transform: translate(0, -100%);
+  transition-duration: 0.3s;
+}
+.main_container .team .team_card_list > div .parent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container .team .team_card_list > div .parent div i {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  color: white;
+}
+.main_container .team .team_card_list > div .parent div i:hover {
+  background-color: white;
+  color: #ed5f5e;
+  transition-duration: 0.4s;
 }
 .main_container .team .team_card_list > div h4 {
   line-height: 24px;
   color: gray;
   text-align: center;
   margin-top: 20px;
+  font-weight: lighter;
 }
 .main_container .team .team_card_list > div p {
   font-size: 12px;
