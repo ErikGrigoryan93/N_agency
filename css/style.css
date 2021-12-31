@@ -448,20 +448,73 @@ hr {
 .main_container .blog {
   max-width: 1200px;
   margin: 100px auto;
+}
+.main_container .blog > h2 {
   text-align: center;
 }
 .main_container .blog hr {
   margin: 20px auto;
 }
-.main_container .blog p {
+.main_container .blog > p {
   margin-bottom: 50px;
+  text-align: center;
 }
-.main_container .blog div {
+.main_container .blog > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+.main_container .blog > div img {
+  width: 100%;
+}
+.main_container .blog > div .calendar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+  border-bottom: 1px solid #e6e6e6;
+  color: gray;
+  font-size: 12px;
   background-color: #f8f8f8;
 }
-.main_container .blog div img {
-  width: 100%;
+.main_container .blog > div .calendar .right:hover {
+  color: #ed5f5e;
+  transition-duration: 0.4s;
+}
+.main_container .blog > div .content {
+  padding: 15px 25px 25px 25px;
+  background-color: #f8f8f8;
+}
+.main_container .blog > div .content h3 {
+  font-weight: lighter;
+  color: #5d5d5d;
+  margin-bottom: 20px;
+}
+.main_container .blog > div .content h3:hover {
+  color: #ed5f5e;
+  transition-duration: 0.4s;
+}
+.main_container .blog > div .content p {
+  color: #767676;
+  margin-bottom: 30px;
+}
+.main_container .blog > div .content h4 {
+  font-weight: lighter;
+  color: #ed5f5e;
+}
+.main_container .blog h5 {
+  text-align: center;
+  margin: 30px 50px;
+}
+.main_container .blog h5 i {
+  padding: 7px 15px;
+  color: gray;
+  background-color: black;
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 24px;
+}
+.main_container .blog h5 i:hover {
+  color: white;
+  background-color: #ed5f5e;
+  transition-duration: 0.4s;
 }
