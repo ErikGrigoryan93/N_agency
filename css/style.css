@@ -539,22 +539,25 @@ hr {
 }
 .main_container .contact h2 {
   text-align: center;
+  color: gray;
+  font-weight: lighter;
 }
 .main_container .contact hr {
   margin: 20px auto;
 }
-.main_container .contact p {
+.main_container .contact > p {
   text-align: center;
   color: #acacac;
   max-width: 800px;
   margin: auto;
-  line-height: 2;
+  line-height: 1.5;
   font-size: 15px;
 }
 .main_container .contact > div {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 50px;
   margin-top: 50px;
 }
 .main_container .contact > div .left_bar {
@@ -599,4 +602,27 @@ hr {
   left: 0;
   transform: translate(0, 0);
   transition-duration: 0.1s;
+}
+.main_container .contact > div .right_bar {
+  color: gray;
+}
+.main_container .contact > div .right_bar > p {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.main_container .contact > div .right_bar > div {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 60px auto;
+}
+.main_container .contact > div .right_bar > div .icon {
+  width: 40px;
+  height: 40px;
+  background-color: #ed5f5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container .contact > div .right_bar > div .icon i {
+  color: white;
 }
