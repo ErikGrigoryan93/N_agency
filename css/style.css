@@ -225,7 +225,7 @@ hr {
 .main_container .help p {
   color: gray;
 }
-.main_container .help .btn {
+.main_container .help button {
   position: relative;
   padding: 10px 15px;
   color: white;
@@ -233,10 +233,10 @@ hr {
   margin-top: 30px;
   overflow: hidden;
 }
-.main_container .help .btn:hover .childs {
+.main_container .help button:hover .childs {
   transform: translate(0, 100%);
 }
-.main_container .help .btn .childs {
+.main_container .help button .childs {
   background-color: rgba(128, 128, 128, 0.5);
   position: absolute;
   width: 100%;
@@ -527,7 +527,76 @@ hr {
   margin: 20px auto;
 }
 .main_container .clients .logos {
-  display: flex;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+.main_container .contact {
+  margin: 100px auto;
+  max-width: 1200px;
+}
+.main_container .contact h2 {
+  text-align: center;
+}
+.main_container .contact hr {
+  margin: 20px auto;
+}
+.main_container .contact p {
+  text-align: center;
+  color: #acacac;
+  max-width: 800px;
+  margin: auto;
+  line-height: 2;
+  font-size: 15px;
+}
+.main_container .contact > div {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-top: 50px;
+}
+.main_container .contact > div .left_bar {
+  line-height: 2;
+}
+.main_container .contact > div .left_bar .input {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.main_container .contact > div .left_bar .input input {
+  padding: 10px;
+  color: gray;
+  border: none;
+  background-color: #f8f8f8;
+}
+.main_container .contact > div .left_bar .textarea textarea {
+  color: gray;
+  background-color: #f8f8f8;
+  width: 580px;
+  border: none;
+  margin: 20px 0;
+  padding: 10px;
+}
+.main_container .contact > div .left_bar button {
+  position: relative;
+  padding: 10px 15px;
+  color: white;
+  background-color: red;
+  overflow: hidden;
+}
+.main_container .contact > div .left_bar button:hover .childs {
+  transform: translate(0, 100%);
+}
+.main_container .contact > div .left_bar button .childs {
+  background-color: rgba(128, 128, 128, 0.2);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  transition-duration: 0.1s;
 }
