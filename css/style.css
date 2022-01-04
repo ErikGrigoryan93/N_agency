@@ -626,3 +626,24 @@ hr {
 .main_container .contact > div .right_bar > div .icon i {
   color: white;
 }
+footer {
+  margin: 100px 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  background-color: black;
+}
+footer > div div {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+footer > div div:hover {
+  background-color: #ed5f5e;
+  color: white;
+  transition-duration: 0.3s;
+}

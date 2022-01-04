@@ -36,39 +36,40 @@ hr {
 }
 
 .main_header {
-        width: 100%; 
-        background-color: white;
-        position: fixed;
-        top: 0;
-        z-index: 999;
+    width: 100%; 
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 
-        .header_content {
-            display: flex;
-            justify-content: space-between;
-            padding: 0 30px;
-            img {
-                padding: 15px;
-            }
+    .header_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        img {
+           padding: 15px;
+        }
     
-            li {
-                display: inline;
-                a {
-                    display: inline-block;
-                    text-decoration: none;
-                    padding:20px;
-                    color: black;
-                    &:hover {
-                        color: #ed5f5e;
-                        transition: 1s;
-                    }
+        li {
+            display: inline;
+             a {
+                display: inline-block;
+                text-decoration: none;
+                padding:20px;
+                color: black;
+                &:hover {
+                    color: #ed5f5e;
+                    transition: 1s;
                 }
             }
         }
+    }
 
     
 }
 
 .main_container {
+
     .home {
         background-image: url(https://www.free-css.com/assets/files/free-css-templates/preview/page271/n-agency/assets/img/slider/s1.jpg);
         background-size: cover;
@@ -749,8 +750,29 @@ hr {
             }
         } 
     }
+}
 
+footer {
+    margin: 100px 0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: gray;
+    background-color: black;
+    > div {
+        div {
+            display: inline-flex;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: #ed5f5e;
+                color: white;
+                transition-duration: 0.3s;
+            }
 
-
-
+        }
+    }
 }
