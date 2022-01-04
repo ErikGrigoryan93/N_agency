@@ -518,3 +518,16 @@ hr {
   background-color: #ed5f5e;
   transition-duration: 0.4s;
 }
+.main_container .clients {
+  background-color: #f8f8f8;
+  padding: 100px;
+  text-align: center;
+}
+.main_container .clients hr {
+  margin: 20px auto;
+}
+.main_container .clients .logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
