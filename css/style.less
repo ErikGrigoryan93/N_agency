@@ -70,56 +70,235 @@ hr {
 
 .main_container {
 
-    .home {
-        background-image: url(https://www.free-css.com/assets/files/free-css-templates/preview/page271/n-agency/assets/img/slider/s1.jpg);
+
+    .home_slider {
+        background-color: gray;
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
+        position: relative;
+        .slide_1 {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-image: url(https://www.free-css.com/assets/files/free-css-templates/preview/page271/n-agency/assets/img/slider/s1.jpg);
+            animation-name: bg_slide_1;
+            // animation-delay: 4s;
+            animation-iteration-count: infinite;
+            animation-duration: 12s;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
 
-        div {
-            text-align: center;
-            color: white;
-            line-height: 1.5;
-
-            h2 {
-                letter-spacing: 3px;
-                font-size: 26px;
-            }
-
-            button {
-                padding: 10px 15px;
-                background-color: white;
-                position: relative;
-                overflow: hidden;
-                margin: 30px;
-                &:hover {
-                    .child_content {
-                        transform: translate(0, 0);
+            div {
+                text-align: center;
+                color: white;
+                line-height: 1.5;
+    
+                h2 {
+                    letter-spacing: 3px;
+                    font-size: 26px;
+                }
+    
+                button {
+                    padding: 10px 15px;
+                    background-color: white;
+                    position: relative;
+                    overflow: hidden;
+                    margin: 30px;
+                    &:hover {
+                        .child_content {
+                            transform: translate(0, 0);
+                        }
                     }
+    
+                    
+    
+                    .child_content {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(128, 128, 128, 0.452);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translate(0,-100%);
+                        transition-duration: 0.2s;
+                    }
+                    
                 }
-
-                
-
-                .child_content {
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(128, 128, 128, 0.452);
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    transform: translate(0,-100%);
-                    transition-duration: 0.2s;
-                }
-                
             }
         }
-        
-    } 
+
+        @keyframes bg_slide_1 {
+            0% {
+                top: 0;
+                left: -100%;
+            }
+
+            33% {
+                top: 0;
+                left: -100%;
+            }
+
+            66% {
+                top: 0;
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+
+        }
+
+        .slide_2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            background-image: url(https://www.free-css.com/assets/files/free-css-templates/preview/page271/n-agency/assets/img/slider/s3.jpg);
+            animation-name: bg_slide_2;
+            // animation-delay: 10s;
+            animation-iteration-count: infinite;
+            animation-duration: 12s;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+
+            div {
+                max-width: 900px;
+                margin-left: 300px;
+                line-height: 1.5;
+    
+                h2 {
+                    letter-spacing: 3px;
+                    font-size: 26px;
+                }
+
+                p {
+                    max-width: 600px;
+                }
+    
+                button {
+                    padding: 10px 15px;
+                    color: white;
+                    background-color: black;
+                    position: relative;
+                    overflow: hidden;
+                    margin:30px 0;
+                    &:hover {
+                        .child_content {
+                            transform: translate(0, 0);
+                        }
+                    }
+    
+                    .child_content {
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(128, 128, 128, 0.452);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translate(0,-100%);
+                        transition-duration: 0.2s;
+                    }
+                    
+                }
+            }
+        }
+
+        @keyframes bg_slide_2 {
+            0% {
+                top: 0;
+                left: 100%;
+            }
+
+            66% {
+                top: 0;
+                left: 100%;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+            }
+
+        }
+
+        .slide_3 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://www.free-css.com/assets/files/free-css-templates/preview/page271/n-agency/assets/img/slider/s2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+    
+            div {
+                text-align: center;
+                color: white;
+                max-width: 900px;
+                line-height: 1.5;
+
+                h1 {
+                    font-weight: normal;
+                }
+    
+                h2 {
+                    letter-spacing: 3px;
+                    font-size: 26px;
+                }
+    
+                p {
+                    max-width: 600px;
+                }
+    
+                button {
+                    padding: 10px 15px;
+                    color: white;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 1px solid white;
+                    position: relative;
+                    overflow: hidden;
+                    margin:30px 0;
+                    &:hover {
+                        .child_content {
+                            transform: translate(0, 0);
+                        }
+                    }
+    
+                    .child_content {
+                        width: 100%;
+                        height: 100%;
+                        color: black;
+                        background-color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translate(0,-100%);
+                        transition-duration: 0.2s;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+
     
     .service {
         max-width: 1200px;
@@ -323,7 +502,7 @@ hr {
             }
 
             p {
-                letter-spacing: 3px;
+                letter-spacing: ;
             }
         }
         video {
