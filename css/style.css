@@ -556,7 +556,6 @@ hr {
 }
 .main_container .skills {
   background-color: #f8f8f8;
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -874,5 +873,21 @@ footer > div div:hover {
   }
   .main_header .header_content li i {
     display: inline;
+  }
+  .main_container .service .service_card_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main_container .portfolio .portfolio_card_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main_container .help {
+    grid-template-columns: 1fr;
+  }
+  .main_container .team .team_card_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main_container .skills > div {
+    grid-template-columns: 1fr;
+    padding: 20px;
   }
 }
