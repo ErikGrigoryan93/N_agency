@@ -38,6 +38,7 @@ hr {
 .main_header .header_content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 30px;
 }
 .main_header .header_content img {
@@ -48,13 +49,17 @@ hr {
 }
 .main_header .header_content li a {
   display: inline-block;
+  font-size: 15px;
   text-decoration: none;
-  padding: 20px;
+  padding: 20px 15px;
   color: black;
 }
 .main_header .header_content li a:hover {
   color: #ed5f5e;
   transition: 1s;
+}
+.main_header .header_content li i {
+  display: none;
 }
 .main_container .home_slider {
   background-color: gray;
@@ -444,7 +449,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(128, 128, 128, 0.4);
+  background-color: rgba(128, 128, 128, 0.2);
 }
 .main_container .video div {
   position: relative;
@@ -862,4 +867,12 @@ footer > div div:hover {
   background-color: #ed5f5e;
   color: white;
   transition-duration: 0.3s;
+}
+@media screen and (max-width: 1000px) {
+  .main_header .header_content li a {
+    display: none;
+  }
+  .main_header .header_content li i {
+    display: inline;
+  }
 }
