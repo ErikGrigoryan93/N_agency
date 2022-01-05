@@ -364,13 +364,14 @@ hr {
 
         > p {
             margin: auto;
-            width: 800px;
+            max-width: 800px;
             color: gray;
             text-align: center;
             line-height: 2;
         }
 
         .service_card_list {
+            padding: 20px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
@@ -415,6 +416,7 @@ hr {
             text-align: center;
             li {
                 display: inline;
+                line-height: 3;
                 a {
                     color: black;
                     text-decoration: none;
@@ -433,6 +435,7 @@ hr {
         }
 
         .portfolio_card_list {
+            padding: 20px;
             max-width: 1200px;
             margin: 50px auto;
             display: grid;
@@ -480,11 +483,16 @@ hr {
     }
 
     .help {
+        padding: 20px;
         max-width: 1200px;
         margin: 100px auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+
+        > div {
+            padding: 30px;
+        }
 
         h2 {
             font-size: 24px;
@@ -579,13 +587,14 @@ hr {
 
         > p {
             margin: auto;
-            width: 800px;
+            max-width: 800px;
             color: gray;
             text-align: center;
             line-height: 2;
         }
 
         .team_card_list {
+            padding: 20px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
@@ -666,11 +675,12 @@ hr {
 
     .skills {
         background-color: #f8f8f8;      
-        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 100px 0;
         > div {
+            padding: 20px;
             width: 1200px;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -729,6 +739,7 @@ hr {
 
     .icons {
         max-width: 1200px;
+        padding: 20px;
         margin: 100px auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -821,6 +832,7 @@ hr {
         }
 
         > div {
+            padding: 20px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
@@ -898,6 +910,7 @@ hr {
         }
 
         .logos {
+            padding: 20px;
             max-width: 1200px;
             margin: 50px auto;
             display: grid;
@@ -930,6 +943,7 @@ hr {
         }
 
         > div {
+            padding: 20px;
             max-width: 1200px;
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -955,7 +969,7 @@ hr {
                     textarea {
                     color: gray;
                     background-color: #f8f8f8;
-                    width: 580px;
+                    width: 97%;
                     border: none;
                     margin: 20px 0;
                     padding: 10px;
@@ -996,6 +1010,7 @@ hr {
                 }
 
                 > div {
+                    padding: 20px;
                     margin-top: 20px;
                     display: grid;
                     grid-template-columns: 60px auto;
@@ -1053,23 +1068,63 @@ footer {
 
     .main_container .service .service_card_list {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin: 50px auto;
     }
 
     .main_container .portfolio .portfolio_card_list {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
     }
 
     .main_container .help {
         grid-template-columns: 1fr;  
+        max-width: 800px;
     }
 
     .main_container .team .team_card_list {
         grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        margin: auto;
     }
 
     .main_container .skills > div {
         grid-template-columns: 1fr;
-        padding: 20px;
+        max-width: 800px;
     }
 
+    .main_container .icons {
+        max-width: 700px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      } 
 }
+
+@media screen and (max-width: 700px) {
+    .main_container .service .service_card_list {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 50px auto;
+    }
+
+    .main_container .contact > div {
+        grid-template-columns: 1fr;
+      }
+}
+
+@media screen and (max-width: 550px) {
+    .main_container .portfolio .portfolio_card_list {
+        grid-template-columns:1fr;
+        max-width: 500px;
+    }
+
+    .main_container .team .team_card_list {
+        grid-template-columns:1fr;
+    }
+
+    .main_container .icons {
+        grid-template-columns:1fr;
+        gap: 30px;
+      }
+}
+

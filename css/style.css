@@ -296,12 +296,13 @@ hr {
 }
 .main_container .service > p {
   margin: auto;
-  width: 800px;
+  max-width: 800px;
   color: gray;
   text-align: center;
   line-height: 2;
 }
 .main_container .service .service_card_list {
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -341,6 +342,7 @@ hr {
 }
 .main_container .portfolio ul li {
   display: inline;
+  line-height: 3;
 }
 .main_container .portfolio ul li a {
   color: black;
@@ -357,6 +359,7 @@ hr {
   transition: 1s;
 }
 .main_container .portfolio .portfolio_card_list {
+  padding: 20px;
   max-width: 1200px;
   margin: 50px auto;
   display: grid;
@@ -396,11 +399,15 @@ hr {
   margin-bottom: 20px;
 }
 .main_container .help {
+  padding: 20px;
   max-width: 1200px;
   margin: 100px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+}
+.main_container .help > div {
+  padding: 30px;
 }
 .main_container .help h2 {
   font-size: 24px;
@@ -484,12 +491,13 @@ hr {
 }
 .main_container .team > p {
   margin: auto;
-  width: 800px;
+  max-width: 800px;
   color: gray;
   text-align: center;
   line-height: 2;
 }
 .main_container .team .team_card_list {
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -559,8 +567,10 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
 }
 .main_container .skills > div {
+  padding: 20px;
   width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -601,6 +611,7 @@ hr {
 }
 .main_container .icons {
   max-width: 1200px;
+  padding: 20px;
   margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -680,6 +691,7 @@ hr {
   text-align: center;
 }
 .main_container .blog > div {
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -747,6 +759,7 @@ hr {
   margin: 20px auto;
 }
 .main_container .clients .logos {
+  padding: 20px;
   max-width: 1200px;
   margin: 50px auto;
   display: grid;
@@ -774,6 +787,7 @@ hr {
   font-size: 15px;
 }
 .main_container .contact > div {
+  padding: 20px;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -798,7 +812,7 @@ hr {
 .main_container .contact > div .left_bar .textarea textarea {
   color: gray;
   background-color: #f8f8f8;
-  width: 580px;
+  width: 97%;
   border: none;
   margin: 20px 0;
   padding: 10px;
@@ -831,6 +845,7 @@ hr {
   margin-bottom: 30px;
 }
 .main_container .contact > div .right_bar > div {
+  padding: 20px;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 60px auto;
@@ -876,18 +891,52 @@ footer > div div:hover {
   }
   .main_container .service .service_card_list {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: 50px auto;
   }
   .main_container .portfolio .portfolio_card_list {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
   }
   .main_container .help {
     grid-template-columns: 1fr;
+    max-width: 800px;
   }
   .main_container .team .team_card_list {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+    margin: auto;
   }
   .main_container .skills > div {
     grid-template-columns: 1fr;
-    padding: 20px;
+    max-width: 800px;
+  }
+  .main_container .icons {
+    max-width: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main_container .service .service_card_list {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  .main_container .contact > div {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main_container .portfolio .portfolio_card_list {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  .main_container .team .team_card_list {
+    grid-template-columns: 1fr;
+  }
+  .main_container .icons {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
