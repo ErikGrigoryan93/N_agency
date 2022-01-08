@@ -762,8 +762,8 @@ hr {
   padding: 20px;
   max-width: 1200px;
   margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  justify-content: space-around;
   gap: 50px;
 }
 .main_container .contact {
